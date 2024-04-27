@@ -97,7 +97,7 @@
 - A kapcsolatok kialakítása hogy könnyebb legyen bevinni az adatokat
 - A legmegfelelőbb adattípusok kiválasztása adatonként
 
-# Általános Lekérdezések
+# Általános és Gyakori Lekérdezések
 
 - ### Összes bor lekérdezése:
 ```Sql
