@@ -50,4 +50,11 @@
 ### 5. Borvidekek:
 - **borvidekek_id:** Az adott vidék egyedi azonosítója (*int*, *unsigned*, *Primary key*, AI[^1])
 - **borvidekek_name:** Az adott borvidék neve (*varchar*, *255*)
-- **borvidekek_area:** Az adott borvidék területe hektárban 
+- **borvidekek_area:** Az adott borvidék területe hektárban (*double*, *unsigned*)
+
+### 6. Borvidekek_Parcellai:
+- **parcellak_borvidekid:**
+- **parcellak_parcellaid:**
+- **parcellak_szolotipus:**
+- **parcellak_szolofajta:** Az adott parcellákban termesztett szőlőfajta
+- **parcellak_terulet:** Az adott parcellák mérete hektárban 
