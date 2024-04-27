@@ -41,6 +41,13 @@
 - **borverseny_borid:** Idegen kulcs a Borok táblából (borok_id) (*int*, *unsigned*)
 - **borverseny_dij:** Az adott versenyen elért helyezést írja le (*varchar*, *255*)
 
-### 4. Bor_Borvidek_Linker:
+### 4. Bor_Borvidek_Linker:[^3]
 - **linker_bor_id:** Idegen kulcs a Borok táblából (borok_id) (*int*, *unsigned*)
-- **linker_borvidek_id:** Idegen kulcs a Borvidekek táblából (b) (*int*, *unsigned*)
+- **linker_borvidek_id:** Idegen kulcs a Borvidekek táblából (borvidekek_id) (*int*, *unsigned*)
+
+[^3]: A tábla azért létezik mert nem lehetett egy az egyben összekapcsolni a Borok és Borvidekek táblát mert egy bor több borvidékhez is tartozhat és hogy ne eredményezzen duplikált entitásokat elkészítettük ezt a táblát.
+
+### 5. Borvidekek:
+- **borvidekek_id:** Az adott vidék egyedi azonosítója
+- **borvidekek_name:** Az adott borvidék neve
+- **borvidekek_area:** Az adot
