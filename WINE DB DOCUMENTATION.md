@@ -1,0 +1,3 @@
+# Általános Információk
+
+- **Adatbázis neve:** 
