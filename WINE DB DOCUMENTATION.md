@@ -19,8 +19,10 @@
 - Parcellák
 - Borversenyek
 - *Linker entitások*
-## Táblák
+## Táblák és Adattípusaik
 --------------------------------------------------
 ### 1. Borok:
-- **borok_id**:  Elsődleges kulcs
-- 
+- **borok_id:**  Elsődleges kulcs (*int*, *unsigned*, *Primary key*)
+- **borok_name:** A borok nevei (*varchar*)
+- **borok_vintage:** A borok évjárata években (*year*)
+- borok_mix: A borok
