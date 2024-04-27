@@ -1,5 +1,5 @@
 # 1. Általános Információk
-
+---------------------------------------------------------------------
 - **Adatbázis neve:** WINE_DB
 - **Cél:** Az adatbázis célja hogy szervezett és hatékony módon tárolja és kezelje a borok, a szőlőfajták és a borvidékek adatait illetve a borversenyek adatait.
 - **DBMS**: MariaDB 11.1.2
@@ -8,7 +8,7 @@
 - **Létrehozási dátum**: *2024.04.27*
 - **Frissítési előzmények:** *2024.04.27 - Első verzió*
 # 2. Adatbázis-terv
-
+--------------------------------------------------------------------
 ## Entitások
 
 - Borok
@@ -17,4 +17,6 @@
 - Parcellák
 - Borversenyek
 - *Linker entitások*
-## 
+## Táblák és típus
+--------------------------------------------------
+###
