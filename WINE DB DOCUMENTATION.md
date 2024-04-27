@@ -82,7 +82,14 @@
 | parcellak_borvidekid | parcellak_parcellaid | parcellak_szolotipus | parcellak_szolofajta | parcellak_terulet |
 | -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
 | 1                    | 1                    | vörös                | Merlot               | 10000             |
-###
+### Bor_Borvidek_Linker
+| linker_bor_id | linker_borvidek_id |
+| ------------- | ------------------ |
+| 2             | 1                  |
+### Szolofajtak
+| szolofajtak_borid | szolofajtak_szolotipus | szolofajtak_szoloneve |
+| ----------------- | ---------------------- | --------------------- |
+| 2                 | vörös                  | Merlot                |
  ## Irányelveink adatbázis tervezés és készítése alatt
 - Adatintegritás biztosítása
 - Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
@@ -90,3 +97,4 @@
 - A kapcsolatok kialakítása hogy könnyebb legyen bevinni az adatokat
 - A legmegfelelőbb adattípusok kiválasztása adatonként
 
+# Általános Lekérdezések
