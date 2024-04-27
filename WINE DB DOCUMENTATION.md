@@ -63,3 +63,10 @@
 
 ## Táblák Tervezői nézetben
 ![Táblák Tervezői nézetben](https://github.com/20HDMI04/WINE_DB/blob/CODE/assets/wine_db2.png)
+
+
+## Irányelveink adatbázis tervezés és készítése alatt
+- Adatintegritás biztosítása
+- Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
+- Az oszlopok nevei beszédesek legyenek és tartalmazzák részben vagy egészben a saját tábláik nevét a könnyebb lekérdezés érdekében.
+- 
