@@ -53,8 +53,11 @@
 - **borvidekek_area:** Az adott borvidék területe hektárban (*double*, *unsigned*)
 
 ### 6. Borvidekek_Parcellai:
-- **parcellak_borvidekid:**
-- **parcellak_parcellaid:**
-- **parcellak_szolotipus:**
-- **parcellak_szolofajta:** Az adott parcellákban termesztett szőlőfajta
-- **parcellak_terulet:** Az adott parcellák mérete hektárban 
+- **parcellak_borvidekid:** Idegen kulcs a Borvidekek táblából (borvidekek_id) (*int*, *unsigned*)
+- **parcellak_parcellaid:** Az adott parcellának az azonosítója (*int*, *unsigned*)[^4]
+- **parcellak_szolotipus:** Az adott parcellában termesztett szőlőfajtának a típusa (pl.: vörös)        (*varchar*, *255*)
+- **parcellak_szolofajta:** Az adott parcellákban termesztett szőlőfajta (pl.: Kadarka)(*varchar*, *255*)
+- **parcellak_terulet:** Az adott parcellák mérete hektárban (*double*, *unsigned*)
+
+[^4]: Azért nem lehetett unique id mert ismétlődik a parcella szám és egy adott parcellát borvidekid-vel és parcellaid-vel lehet csak beazonosítani.
+
