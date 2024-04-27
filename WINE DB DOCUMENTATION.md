@@ -1,3 +1,4 @@
 # Általános Információk
 
-- **Adatbázis neve:** 
+- **Adatbázis neve:** WINE_DB
+- **Cél:** 
