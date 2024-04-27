@@ -119,6 +119,10 @@ SELECT ROUND(((SELECT SUM(Borvidekek_Parcellai.parcellak_terulet) FROM Borvideke
 ```Sql
 SELECT * FROM Borversenyek WHERE borverseny_name LIKE '%kereső kifejezés%';
 ```
+- ### Adott Bor Versenyeken nyert díjai
+```Sql
+SELECT Borok.borok_name, Borversenyek.borverseny_name, Borversenyek.borverseny_dij FROM Borok Join Borversenyek ON Borok.borok_id = Borversenyek.borverseny_borid;
+```
 # További funkciók:
 - Az adatbázis bővíthető további táblákkal, például a borok értékeléseinek, a vásárlásoknak és a beszállítóknak a tárolására.
 - Az adatbázis lekérdezések és jelentések készítésére használható a borokról szóló információk elemzéséhez.
