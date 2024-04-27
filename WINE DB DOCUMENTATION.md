@@ -61,3 +61,5 @@
 
 [^4]: Azért nem lehetett unique id mert ismétlődik a parcella szám és egy adott parcellát borvidekid-vel és parcellaid-vel lehet csak beazonosítani.
 
+## Táblák Tervezői nézetben
+![Táblák Tervezői nézetben]()
