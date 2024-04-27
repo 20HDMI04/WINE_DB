@@ -22,7 +22,10 @@
 ## Táblák és Adattípusaik
 --------------------------------------------------
 ### 1. Borok:
-- **borok_id:**  Elsődleges kulcs (*int*, *unsigned*, *Primary key*)
-- **borok_name:** A borok nevei (*varchar*)
+- **borok_id:**  Elsődleges kulcs (*int*, *unsigned*, *Primary key*, AI[^1])
+- **borok_name:** A borok nevei (*varchar*, 255)
 - **borok_vintage:** A borok évjárata években (*year*)
-- borok_mix: A borok
+- **borok_mix**: A borok keverékek-e, *0=false, 1=true* (tinyint)
+- **borok_producer**: A borok gyárójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
+
+[^1]: *Auto Increment*
