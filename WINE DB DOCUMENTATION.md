@@ -111,3 +111,7 @@ SELECT * FROM Borok WHERE borok_name LIKE '%kereső kifejezés%';
 ```Sql
 SElECT * FROM Borok JOIN Szolofajtak ON Borok.borok_id = Szolofajtak.szolofajtak_borid WHERE Szolofajtak.szolofajtak_szoloneve LIKE '%Merlot%';
 ```
+- ### Adott terület vörösbor százalékos aránya:
+```Sql
+SELECT ROUND(((SELECT SUM(Borvidekek_Parcellai.parcellak_terulet) FROM Borvidekek JOIN Borvidekek_Parcellai ON Borvidekek.borvidekek_id = Borvidekek_Parcellai.parcellak_borvidekid WHERE Borvidekek_Parcellai.parcellak_szolotipus LIKE "%vörös%" AND Borvidekek.borvidekek_name LIKE "Bordeaux")/Borvidekek.borvidekek_area),2) as VorosBorSzalakesArany FROM Borvidekek;
+```
