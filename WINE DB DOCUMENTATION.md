@@ -62,4 +62,4 @@
 [^4]: Azért nem lehetett unique id mert ismétlődik a parcella szám és egy adott parcellát borvidekid-vel és parcellaid-vel lehet csak beazonosítani.
 
 ## Táblák Tervezői nézetben
-![Táblák Tervezői nézetben]()
+![Táblák Tervezői nézetben](https://github.com/20HDMI04/WINE_DB/blob/CODE/assets/wine_db2.png)
