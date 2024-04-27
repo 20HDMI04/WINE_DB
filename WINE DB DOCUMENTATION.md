@@ -29,6 +29,8 @@
 - **borok_producer:** A borok gyárójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
 
 [^1]: *Auto Increment*
-### 2. Szolofajtak:
-- **szolofajtak_borid:** Idegen kulcs a Borok táblából (borok_id)
-
+### 2. Szolofajtak:[^2]
+- **szolofajtak_borid:** Idegen kulcs a Borok táblából (borok_id) (*int*, *unsigned*)
+- **szolofajtak_szolotipus:** Az adott bor szőlőfajtájának típusa (pl.: vörös) (*varchar*, *255*)
+- **szolofajtak_szoloneve:** Az adott bor szőlőfajtája (pl.: Kadarka) (*varchar*, *255*)
+[^2]: 
