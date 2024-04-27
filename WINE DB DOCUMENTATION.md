@@ -67,8 +67,12 @@
 
 ## Példa a táblázatbeli adatokra
 ### Borok
-
-## Irányelveink adatbázis tervezés és készítése alatt
+| borok_id | borok_name                | borok_vintage | borok_mix | borok_producer    |
+| -------- | ------------------------- | ------------- | --------- | ----------------- |
+| 2        | Château Lafite Rothschild | 2010          | 1         | Rothschild family |
+### Borversenyek
+| borverseny_name | borverseny_date | borverseny_borid 
+ ## Irányelveink adatbázis tervezés és készítése alatt
 - Adatintegritás biztosítása
 - Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
 - Az oszlopok nevei beszédesek legyenek és tartalmazzák részben vagy egészben a saját tábláik nevét a könnyebb lekérdezés érdekében.
