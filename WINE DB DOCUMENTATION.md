@@ -71,7 +71,12 @@
 | -------- | ------------------------- | ------------- | --------- | ----------------- |
 | 2        | Château Lafite Rothschild | 2010          | 1         | Rothschild family |
 ### Borversenyek
-| borverseny_name | borverseny_date | borverseny_borid 
+| borverseny_name            | borverseny_date | borverseny_borid | borverseny_díj |
+| -------------------------- | --------------- | ---------------- | -------------- |
+| Decanter World Wine Awards | 2023-04-12      | 2                | aranyérem      |
+ ### Borvidekek
+|     | borvidekek_id | borvidekek_name | borvidekek_area |
+| --- | ------------- | --------------- | --------------- |
  ## Irányelveink adatbázis tervezés és készítése alatt
 - Adatintegritás biztosítása
 - Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
