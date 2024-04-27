@@ -1,5 +1,5 @@
 # 1. Általános Információk
----------------------------------------------------------------------
+
 - **Adatbázis neve:** WINE_DB
 - **Cél:** Az adatbázis célja hogy szervezett és hatékony módon tárolja és kezelje a borok, a szőlőfajták és a borvidékek adatait illetve a borversenyek adatait.
 - **DBMS**: MariaDB 11.1.2
@@ -10,7 +10,7 @@
 - **Létrehozási dátum**: *2024.04.27*
 - **Frissítési előzmények:** *2024.04.27 - Első verzió*
 # 2. Adatbázis-terv
---------------------------------------------------------------------
+
 ## Entitások
 
 - Borok
@@ -20,12 +20,15 @@
 - Borversenyek
 - *Linker entitások*
 ## Táblák és Adattípusaik
---------------------------------------------------
+
 ### 1. Borok:
 - **borok_id:**  Elsődleges kulcs (*int*, *unsigned*, *Primary key*, AI[^1])
 - **borok_name:** A borok nevei (*varchar*, 255)
 - **borok_vintage:** A borok évjárata években (*year*)
-- **borok_mix**: A borok keverékek-e, *0=false, 1=true* (tinyint)
-- **borok_producer**: A borok gyárójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
+- **borok_mix:** A borok keverékek-e, *0=false, 1=true* (tinyint)
+- **borok_producer:** A borok gyárójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
 
 [^1]: *Auto Increment*
+### 2. Szolofajtak:
+- **szolofajtak_borid:** Idegen kulcs a Borok táblából (borok_id)
+
