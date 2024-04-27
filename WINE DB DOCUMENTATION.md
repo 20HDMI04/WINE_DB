@@ -48,6 +48,6 @@
 [^3]: A tábla azért létezik mert nem lehetett egy az egyben összekapcsolni a Borok és Borvidekek táblát mert egy bor több borvidékhez is tartozhat és hogy ne eredményezzen duplikált entitásokat elkészítettük ezt a táblát.
 
 ### 5. Borvidekek:
-- **borvidekek_id:** Az adott vidék egyedi azonosítója
+- **borvidekek_id:** Az adott vidék egyedi azonosítója (*int*, *unsigned*, *Primary key*, AI[^1])
 - **borvidekek_name:** Az adott borvidék neve
-- **borvidekek_area:** Az adot
+- **borvidekek_area:** Az adott borvidék területe hektárban
