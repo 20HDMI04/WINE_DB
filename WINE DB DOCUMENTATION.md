@@ -75,8 +75,14 @@
 | -------------------------- | --------------- | ---------------- | -------------- |
 | Decanter World Wine Awards | 2023-04-12      | 2                | aranyérem      |
  ### Borvidekek
-|     | borvidekek_id | borvidekek_name | borvidekek_area |
-| --- | ------------- | --------------- | --------------- |
+| borvidekek_id | borvidekek_name | borvidekek_area |
+| ------------- | --------------- | --------------- |
+| 1             | Bordeaux        | 61700           |
+### Borvidekek_Parcellai
+| parcellak_borvidekid | parcellak_parcellaid | parcellak_szolotipus | parcellak_szolofajta | parcellak_terulet |
+| -------------------- | -------------------- | -------------------- | -------------------- | ----------------- |
+| 1                    | 1                    | vörös                | Merlot               | 10000             |
+###
  ## Irányelveink adatbázis tervezés és készítése alatt
 - Adatintegritás biztosítása
 - Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
