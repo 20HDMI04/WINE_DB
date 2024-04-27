@@ -1,4 +1,4 @@
-# Általános Információk
+# 1. Általános Információk
 
 - **Adatbázis neve:** WINE_DB
 - **Cél:** Az adatbázis célja hogy szervezett és hatékony módon tárolja és kezelje a borok, a szőlőfajták és a borvidékek adatait illetve a borversenyek adatait.
@@ -7,5 +7,13 @@
 - **Kezelő felület:** [phpMyAdmin](https://hub.docker.com/_/phpmyadmin)
 - **Létrehozási dátum**: *2024.04.27*
 - **Frissítési előzmények:** *2024.04.27 - Első verzió*
-# Adatbázis-terv
+# 2. Adatbázis-terv
 
+## Entitások
+
+- Borok
+- Szőlőfajták
+- Borvidékek
+- Parcellák
+- Borversenyek
+- *Linker entitás*
