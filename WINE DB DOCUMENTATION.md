@@ -98,3 +98,16 @@
 - A legmegfelelőbb adattípusok kiválasztása adatonként
 
 # Általános Lekérdezések
+
+- ### Összes bor lekérdezése:
+```Sql
+SELECT * FROM Borok;
+```
+- ### Borok keresése névalapján
+```Sql
+SELECT * FROM Borok WHERE borok_name LIKE '%kereső kifejezés%';
+```
+- ### Borok szűrése szőlőfajta alapján:
+```Sql
+SELECT * FROM Borok WHERE borok_name LIKE '%kereső kifejezés%';
+```
