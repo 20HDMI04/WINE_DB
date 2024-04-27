@@ -119,4 +119,7 @@ SELECT ROUND(((SELECT SUM(Borvidekek_Parcellai.parcellak_terulet) FROM Borvideke
 ```Sql
 SELECT * FROM Borversenyek WHERE borverseny_name LIKE '%kereső kifejezés%';
 ```
-# További funkció
+# További funkciók:
+- Az adatbázis bővíthető további táblákkal, például a borok értékeléseinek, a vásárlásoknak és a beszállítóknak a tárolására.
+- Az adatbázis lekérdezések és jelentések készítésére használható a borokról szóló információk elemzéséhez.
+- Az adatbázis integrálható egy webes alkalmazással a borok online kezelésére.
