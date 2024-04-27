@@ -33,4 +33,7 @@
 - **szolofajtak_borid:** Idegen kulcs a Borok táblából (borok_id) (*int*, *unsigned*)
 - **szolofajtak_szolotipus:** Az adott bor szőlőfajtájának típusa (pl.: vörös) (*varchar*, *255*)
 - **szolofajtak_szoloneve:** Az adott bor szőlőfajtája (pl.: Kadarka) (*varchar*, *255*)
-[^2]: 
+
+[^2]: A tábla azért létezik mert habár Borvidekek_Parcellai táblában már szerepel egy hasonló adat az ebben a táblában azok az adatok vannak melyek megmutatják hogy az adott bor miből készült míg a másik táblában csak az Adott parcellában termelt szőlőt mutatja meg ami hivatkozik a Vidékre de ha egy bor ezen az adott vidéken készült az nem jelenti azt hogy a földeken még mindig ugyanaz a szőlők vannak ott. 
+### 3. Borversenyek:
+- borverseny_name: Az adott verseny nevét adja meg ami
