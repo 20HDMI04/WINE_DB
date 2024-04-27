@@ -109,7 +109,5 @@ SELECT * FROM Borok WHERE borok_name LIKE '%kereső kifejezés%';
 ```
 - ### Borok szűrése szőlőfajta alapján:
 ```Sql
-SElECT * 
-FROM Borok JOIN Szolofajtak ON Borok.borok_id = Szolofajtak.szolofajtak_borid 
-WHERE Szolofajtak.szolofajtak_szoloneve LIKE '%Merlot%';
+SElECT * FROM Borok JOIN Szolofajtak ON Borok.borok_id = Szolofajtak.szolofajtak_borid WHERE Szolofajtak.szolofajtak_szoloneve LIKE '%Merlot%';
 ```
