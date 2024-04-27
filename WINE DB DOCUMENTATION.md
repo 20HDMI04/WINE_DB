@@ -16,4 +16,4 @@
 - Borvidékek
 - Parcellák
 - Borversenyek
-- *Linker entitás*
+- *Linker entitások*
