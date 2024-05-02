@@ -92,36 +92,36 @@
 | 2                 | vörös                  | Merlot                |
  ## Irányelveink adatbázis tervezés és készítése alatt
 - Adatintegritás biztosítása
-- Az oszlopok ne tartalmazzanak ékezetet ami megzavarhatja esetlegesen az adatbázis kezelőket és lekérdezéseket
+- Az oszlopok ne tartalmazzanak speciális karaktereket amik megzavarhatják esetlegesen az adatbázis kezelőket és lekérdezéseket.
 - Az oszlopok nevei beszédesek legyenek és tartalmazzák részben vagy egészben a saját tábláik nevét a könnyebb lekérdezés érdekében.
-- A kapcsolatok kialakítása hogy könnyebb legyen bevinni az adatokat
-- A legmegfelelőbb adattípusok kiválasztása adatonként
+- A kapcsolatok kialakítása a biztonságosabb adattárolás érdekében.
+- A legmegfelelőbb adattípusok kiválasztása adatonként.
 
 # Általános és Gyakori Lekérdezések
 
 - ### Összes bor lekérdezése:
 ```Sql
-SELECT * FROM Borok;
+SELECT * FROM borok;
 ```
 - ### Borok keresése névalapján
 ```Sql
-SELECT * FROM Borok WHERE borok_name LIKE '%kereső kifejezés%';
+SELECT * FROM borok WHERE borok_name LIKE '%kereső kifejezés%';
 ```
 - ### Borok szűrése szőlőfajta alapján:
 ```Sql
-SElECT * FROM Borok JOIN Szolofajtak ON Borok.borok_id = Szolofajtak.szolofajtak_borid WHERE Szolofajtak.szolofajtak_szoloneve LIKE '%Merlot%';
+SElECT * FROM borok JOIN Szolofajtak ON borok.borok_id = szolofajtak.szolofajtak_borid WHERE szolofajtak.szolofajtak_szoloneve LIKE '%Merlot%';
 ```
 - ### Adott terület vörösbor százalékos aránya:
 ```Sql
-SELECT ROUND(((SELECT SUM(Borvidekek_Parcellai.parcellak_terulet) FROM Borvidekek JOIN Borvidekek_Parcellai ON Borvidekek.borvidekek_id = Borvidekek_Parcellai.parcellak_borvidekid WHERE Borvidekek_Parcellai.parcellak_szolotipus LIKE "%vörös%" AND Borvidekek.borvidekek_name LIKE "%keresett_t%")/Borvidekek.borvidekek_area),2) as VorosBorSzazalekosArany FROM Borvidekek;
+SELECT CONCAT(ROUND(((SELECT SUM(borvidekek_parcellai.parcellak_terulet) FROM borvidekek JOIN borvidekek_parcellai ON borvidekek.borvidekek_id = borvidekek_parcellai.parcellak_borvidekid WHERE borvidekek.borvidekek_name LIKE "%Tokaj%" AND borvidekek_parcellai.parcellak_szolotipus LIKE "vörös")/borvidekek.borvidekek_area*100),2),"%") as "VOROSSZAZALEK" FROM borvidekek WHERE borvidekek.borvidekek_name LIKE "Tokaj";
 ```
 - ### Bor Versenyek keresése névalapján
 ```Sql
-SELECT * FROM Borversenyek WHERE borverseny_name LIKE '%kereső kifejezés%';
+SELECT * FROM borversenyek WHERE borverseny_name LIKE '%kereső kifejezés%';
 ```
 - ### Adott Bor Versenyeken nyert díjai
 ```Sql
-SELECT Borok.borok_name, Borversenyek.borverseny_name, Borversenyek.borverseny_dij FROM Borok Join Borversenyek ON Borok.borok_id = Borversenyek.borverseny_borid;
+SELECT borok.borok_name, borversenyek.borverseny_name, borversenyek.borverseny_dij FROM borok Join borversenyek ON borok.borok_id = borversenyek.borverseny_borid WHERE borok.borok_name LIKE "Tokaji Aszú";
 ```
 # További funkciók:
 - Az adatbázis bővíthető további táblákkal, például a borok értékeléseinek, a vásárlásoknak és a beszállítóknak a tárolására.
