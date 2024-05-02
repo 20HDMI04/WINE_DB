@@ -115,13 +115,17 @@ SElECT * FROM borok JOIN Szolofajtak ON borok.borok_id = szolofajtak.sz
 ```Sql
 SELECT CONCAT(ROUND(((SELECT SUM(borvidekek_parcellai.parcellak_terulet) FROM borvidekek JOIN borvidekek_parcellai ON borvidekek.borvidekek_id = borvidekek_parcellai.parcellak_borvidekid WHERE borvidekek.borvidekek_name LIKE "%Tokaj%" AND borvidekek_parcellai.parcellak_szolotipus LIKE "vörös")/borvidekek.borvidekek_area*100),2),"%") as "VOROSSZAZALEK" FROM borvidekek WHERE borvidekek.borvidekek_name LIKE "Tokaj";
 ```
-- ### Bor Versenyek keresése névalapján
+- ### Bor versenyek keresése névalapján
 ```Sql
 SELECT * FROM borversenyek WHERE borverseny_name LIKE '%kereső kifejezés%';
 ```
-- ### Adott Bor Versenyeken nyert díjai
+- ### Adott bor versenyeken nyert díjai
 ```Sql
 SELECT borok.borok_name, borversenyek.borverseny_name, borversenyek.borverseny_dij FROM borok Join borversenyek ON borok.borok_id = borversenyek.borverseny_borid WHERE borok.borok_name LIKE "Tokaji Aszú";
+```
+- ### Aranyérmes borok és adataik
+```Sql
+SELECT borok.borok_producer,borok.borok_name,borok.borok_vintage,borvidekek.borvidekek_name FROM borversenyek JOIN borok ON borok.borok_id = borversenyek.borverseny_borid JOIN bor_borvidek_linker ON borok.borok_id = bor_borvidek_linker.linker_bor_id JOIN borvidekek ON bor_borvidek_linker.linker_borvidek_id = borvidekek.borvidekek_id WHERE borversenyek.borverseny_dij LIKE "aranyérem";
 ```
 # További funkciók:
 - Az adatbázis bővíthető további táblákkal, például a borok értékeléseinek, a vásárlásoknak és a beszállítóknak a tárolására.
