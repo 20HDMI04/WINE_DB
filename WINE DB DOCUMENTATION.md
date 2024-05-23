@@ -26,7 +26,7 @@
 - **borok_name:** A borok nevei (*varchar*, 255)
 - **borok_vintage:** A borok évjárata években (*year*)
 - **borok_mix:** A borok keverékek-e, *0=false, 1=true* (tinyint)
-- **borok_producer:** A borok gyárójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
+- **borok_producer:** A borok gyártójának neve melyet a könnyebb beazonosíthatóság miatt tartunk a táblában. (*varchar*, 255)
 
 [^1]: *Auto Increment*
 ### 2. Szolofajtak:[^2]
@@ -34,7 +34,7 @@
 - **szolofajtak_szolotipus:** Az adott bor szőlőfajtájának típusa (pl.: vörös) (*varchar*, *255*)
 - **szolofajtak_szoloneve:** Az adott bor szőlőfajtája (pl.: Kadarka) (*varchar*, *255*)
 
-[^2]: A tábla azért létezik mert habár Borvidekek_Parcellai táblában már szerepel egy hasonló adat az ebben a táblában azok az adatok vannak melyek megmutatják hogy az adott bor miből készült míg a másik táblában csak az Adott parcellában termelt szőlőt mutatja meg ami hivatkozik a Vidékre de ha egy bor ezen az adott vidéken készült az nem jelenti azt hogy a földeken még mindig ugyanaz a szőlők vannak ott. 
+[^2]: A tábla azért létezik mert habár Borvidekek_Parcellai táblában már szerepel egy hasonló adat, ebben a táblában azok az adatok vannak melyek megmutatják hogy az adott bor miből készült míg a másik táblában csak az adott parcellában termelt szőlőt mutatja meg ami hivatkozik a Vidékre de ha egy bor ezen az adott vidéken készült az nem jelenti azt hogy a földeken még mindig ugyanaz a szőlők vannak ott. 
 ### 3. Borversenyek:
 - **borverseny_name:** Az adott verseny nevét adja meg amin nyert a bor (*varchar*, *255*)
 - **borverseny_date:** Az adott verseny dátumát adja meg (*date*)
